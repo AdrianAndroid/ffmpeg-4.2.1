@@ -169,7 +169,7 @@ static char *choose_ ## suffix (OutputFilter *ofilter)                         \
         int len;                                                               \
                                                                                \
         if (avio_open_dyn_buf(&s) < 0)                                         \
-            exit_program(1);                                                           \
+            exit_program(1);                                                   \
                                                                                \
         for (p = ofilter->supported_list; *p != none; p++) {                   \
             get_name(*p);                                                      \
